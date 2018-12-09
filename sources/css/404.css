@@ -1,0 +1,101 @@
+h1
+{font-size: 48px}
+
+#fond {
+  width:1280px;
+  height:574px;
+  background-image: url("../images/desertPaysage.jpg");
+
+}
+
+#Lama {
+  top:420px;
+  left: -100px;
+  height: 150px;
+  width: 150px;
+  animation-name: anim-lama;
+  animation-duration: 10s;
+  position: absolute;
+  visibility: hidden;
+  }
+
+
+.etoile{
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-name: anim-etoile;
+  animation-duration: 10s;
+  visibility: hidden;
+}
+
+.JC{
+  height: 350px;
+  position: absolute;
+  top: 320px;
+  left: 1040px;
+  transform: rotate(-60deg);
+  animation-name: anim-JC;
+  animation-duration: 10s;
+  width: 350px;
+  visibility: hidden
+}
+
+    @keyframes anim-lama {
+      3% {visibility: visible;}
+      6%{
+        top:420px;transform: rotate(-15deg)}
+      7% {top:420px;transform: rotate(0deg)}
+      8%{top:420px;transform: rotate(-15deg)}
+      13%{top:420px;transform: rotate(-15deg)}
+      14% {top:420px;transform: rotate(0deg)}
+      15%{top:420px;transform: rotate(-15deg)}
+      20%{top:420px;transform: rotate(-15deg)}
+      21% {top:420px;transform: rotate(0deg)}
+      22%{top:420px;transform: rotate(-15deg)}
+      27%{top:420px;transform: rotate(-15deg)}
+      28% {top:420px;transform: rotate(0deg)}
+      29%{top:420px;transform: rotate(-15deg)}
+      34%{top:420px;transform: rotate(-15deg)}
+      35% {top:420px;transform: rotate(0deg)}
+      36%{top:420px;transform: rotate(-15deg)}
+      41%{top:420px;transform: rotate(-15deg)}
+      42% {top:420px;transform: rotate(0deg)}
+      43%{top:420px;transform: rotate(-15deg)}
+      48%{top:420px;transform: rotate(-15deg)}
+      49% {top:420px;transform: rotate(0deg)}
+      50%{top:420px;transform: rotate(-15deg)}
+      55%{top:420px;transform: rotate(-15deg)}
+      56% {top:420px;transform: rotate(0deg)}
+      57%{top:420px;transform: rotate(-15deg)}
+      62%{top:420px;transform: rotate(-15deg)}
+      63% {top:420px;transform: rotate(0deg)}
+      64%{top:420px;transform: rotate(-15deg)}
+      69%{top:420px;transform: rotate(-15deg)}
+      70% {top:420px;transform: rotate(0deg)}
+      71%{top:420px;transform: rotate(-15deg)}
+      76%{top:420px;left:900px; transform: rotate(0deg)}
+      77% {top:420px;left:900px; transform: rotate(15deg)}
+      78%{top:420px;left:900px; transform: rotate(0deg)}
+      84%{top:150px;left: 650px;transform: rotate(165deg) scale(0.66);}
+      91%{top: 50px;left: 300px;transform: rotate(345deg) scale(0.33);}
+      98%{top: 0px;left: 0px;transform: rotate(525deg) scale(0);}
+    }
+
+@keyframes anim-etoile {
+  0%{}
+  97%{ visibility: hidden;  top: 0px;
+    left: 0px; height: 150px;}
+  98%{ visibility: visible;  height: 150px; transform: rotate(180deg) }
+
+
+  100%{visibility: hidden; transform: scale(0)}
+}
+
+@keyframes anim-JC{
+  0%{}
+  76%{visibility: hidden; left: 1040px; top: 320px;transform: rotate(-60deg)}
+  77%{visibility: visible; left: 1030px; top: 320px;transform: rotate(60deg)}
+  78%{visibility: visible; left: 1030px; top: 320px;transform: rotate(60deg)}
+}

@@ -1,0 +1,29 @@
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
+}
+p{
+  font-size: 15px;
+}
+
+img[alt*="mème"]{
+  height:10px;
+  transition: all 1s;
+}
+
+img[alt*="mème"]:hover{
+  height: 32px;
+  transition: all 1s;
+}
+
+img[alt*="pinta"]{
+  height:20px;
+  transition: all 1s;
+}
+
+img[alt*="pinta"]:hover{
+  height: 100px;
+  transition: all 1s;
+}
